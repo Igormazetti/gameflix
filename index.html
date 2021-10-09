@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/main.css" />
+
+    <!-- Estilização de responsividade -->
+    <link rel="stylesheet" href="style/responsive.css" />
+
+    <!-- Estilização do carrossel importada do owl -->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css" />
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css" />
+
+    <title>GAMEFLIX</title>
+  </head>
+  <body>
+    <header>
+      <div class="container" id="inicio">
+        <h2 class="logo">GAMEFLIX</h2>
+        <nav>
+          <!-- tag utilizada quando for inserir tags de navegação -->
+          <a href="#inicio">Inicio</a>
+          <a href="#games">Jogos</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="filme-principal">
+        <div class="container">
+          <!-- div container utilizada como wrapper dos conteúdos a seguir -->
+          <h3 class="titulo">WORLD OF WARCRAFT</h3>
+          <p class="descricao">
+            World of Warcraft é um jogo on-line do gênero MMORPG, desenvolvido e
+            distribuído pela produtora Blizzard Entertainment e lançado em 2004.
+            O jogo se passa no mundo fantástico de Azeroth, introduzido no
+            primeiro jogo da série, Warcraft: Orcs & Humans, lançado em 1994.
+          </p>
+          <div class="botoes">
+            <!-- Toda div vem com display: block -->
+            <button role="button" class="botao">
+              <i class="fas fa-play"></i>
+              <!-- classe adicionada de acordo com o site fontawsome (ícone) -->
+              <a
+                target="_blank"
+                href="https://www.youtube.com/watch?v=qtDfA8gU9ik"
+                >ASSISTIR TRAILER</a
+              >
+            </button>
+            <button role="button" class="botao">
+              <i class="fas fa-info-circle"></i>
+              <!-- classe adicionada de acordo com o site fontawsome (ícone) -->
+              <a target="_blank" href="https://worldofwarcraft.com/pt-br/"
+                >MAIS INFORMAÇÕES</a
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="carrosel-filmes" id="games">
+      <div class="owl-carousel owl-theme"></div>
+      <div class="owl-carousel owl-theme"></div>
+    </div>
+
+    <footer>
+      <div>
+        <p>Created by Igor Mazetti de Azevedo</p>
+      </div>
+    </footer>
+
+    <!-- ícones e estilos retirados do site fontawsome -->
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+    <!-- Importação do owlcarousel - utiliza a ferramenta jQuery para criar o carrossel dos filmes -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="./js/index.js"></script>
+    <!-- Linka ao setup do owlcarousel, para funcionar o carrossel -->
+  </body>
+</html>
